@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer"
 import Navbar from "@/components/Navbar"
 import "./globals.css";
+import { SessionProvider } from "next-auth/react";
 
 export const metadata = {
   title: 'Dribble-clone',
@@ -15,7 +16,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Navbar />
+       
+       <Navbar />
         <main>
           {children}
         </main>
